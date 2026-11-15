@@ -34,7 +34,7 @@
   gap: 20px;
 }
 
-.icon-menu {
+.nav-menu .icon-menu {
   display: none;
 }
 
@@ -48,7 +48,7 @@
     gap: 30px;
   }
 
-  .icon-menu {
+  .nav-menu .icon-menu {
     display: block;
     font-size: 24px;
   }
