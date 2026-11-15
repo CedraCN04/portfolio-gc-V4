@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title description">
+  <title id="title">GC — Impression 3D et CAO</title>
+  <desc id="description">Monogramme GC en lettres extrudées bleu pétrole, avec une buse imprimant le G et quelques arêtes de construction CAO cyan sur le C.</desc>
+  <defs>
+    <path id="letter-g" d="M 427,223 H 280 C 185,223 135,283 135,363 C 135,451 196,500 282,500 H 421 V 365 H 303"/>
+    <path id="letter-c" d="M 864,223 H 745 C 661,223 611,282 611,363 C 611,450 666,500 749,500 H 863"/>
+  </defs>
+
+  <!-- Solid letter thickness, offset up and to the right. -->
+  <g fill="none" stroke="#003741" stroke-width="82" stroke-linecap="round" stroke-linejoin="round" transform="translate(15 -14)">
+    <use href="#letter-g"/>
+    <use href="#letter-c"/>
+  </g>
+
+  <!-- Main printable letter faces. -->
+  <g fill="none" stroke="#06535e" stroke-width="80" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#letter-g"/>
+    <use href="#letter-c"/>
+  </g>
+
+  <!-- CAD edges: restrained, accurately aligned sketch-like linework. -->
+  <g fill="none" stroke="#20d3de" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- G rim and interior edge. -->
+    <path d="M 426,182 L 442,169 M 424,263 L 439,248"/>
+    <path d="M 305,326 H 422 V 499"/>
+    <!-- C upper wireframe segment and extruded end face. -->
+    <path d="M 733,181 H 864 L 879,168 V 263 L 863,276"/>
+    <path d="M 864,181 V 263 H 759"/>
+    <path d="M 864,263 L 879,249"/>
+    <path d="M 755,181 V 207 M 737,207 H 848" stroke-width="2.6"/>
+    <!-- Small CAD constraint / sketch point. -->
+    <circle cx="833" cy="263" r="8" fill="#06535e"/>
+    <!-- Subtle lower front outlines denote clean 3D geometry. -->
+    <path d="M 747,541 H 861" stroke-width="3" opacity=".85"/>
+  </g>
+
+  <!-- The nozzle deposits the upper stroke of the G. -->
+  <g>
+    <rect x="308" y="75" width="81" height="28" rx="11" fill="#06535e"/>
+    <path d="M 318,102 H 379 L 357,135 H 339 Z" fill="#00434d"/>
+    <path d="M 347,135 V 158 Q 347,189 310,189 H 273 Q 226,189 200,215" fill="none" stroke="#20d3de" stroke-width="13" stroke-linecap="round"/>
+    <path d="M 316,104 H 378" stroke="#20d3de" stroke-width="2.5" opacity=".7"/>
+  </g>
+</svg>

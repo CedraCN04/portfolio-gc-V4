@@ -1,0 +1,59 @@
+/* Importation des variables CSS */
+@import url("variables.css");
+
+/* Général, réinitialisation des syles de base */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  text-decoration: none;
+  color: var(--text-color);
+  list-style: none;
+}
+
+/* Header */
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  height: auto;
+  width: 100px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-menu {
+  display: none;
+}
+
+/* Media queries pour les écrans de petite taille */
+
+@media (max-width: 768px) {
+  .nav-menu {
+    width: 80%;
+  }
+  .nav-list {
+    gap: 30px;
+  }
+
+  .icon-menu {
+    display: block;
+    font-size: 24px;
+  }
+  .text-link {
+    display: none;
+  }
+}
+

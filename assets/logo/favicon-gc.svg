@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">GC — Favicon</title>
+  <desc id="description">Version simplifiée et transparente du monogramme GC, cyan bordé de bleu pétrole.</desc>
+  <!-- Fine dark outline keeps the cyan letters legible on light or dark backgrounds. -->
+  <g fill="none" stroke="#064550" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 116,92 H 88 C 58,92 45,111 45,134 C 45,163 62,178 89,178 H 117 V 145 H 94"/>
+    <path d="M 213,95 H 189 C 163,95 150,109 150,135 C 150,163 165,178 190,178 H 211"/>
+  </g>
+  <g fill="none" stroke="#26d8e1" stroke-width="21" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 116,92 H 88 C 58,92 45,111 45,134 C 45,163 62,178 89,178 H 117 V 145 H 94"/>
+    <path d="M 213,95 H 189 C 163,95 150,109 150,135 C 150,163 165,178 190,178 H 211"/>
+  </g>
+</svg>
