@@ -1,4 +1,8 @@
 :root {
   --background-color: black;
   --text-color: white;
+  --primary-color: #cdf7fd4b;
+  --secondary-color: #6f92d5;
+  --font-family: "Arial", sans-serif;
 }
+
