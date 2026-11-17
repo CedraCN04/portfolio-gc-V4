@@ -25,11 +25,11 @@ html {
 
 header {
   min-height: 100dvh;
-  background-image: url("/assets/img/arriere-plan-portfolio-cao-impression-3d.png");
+  background: url(/assets/img/Fond\ technologique\ futuriste\ bleu\ sarcelle\ et\ marine.png)
+    no-repeat center center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: #f2fbfc;
+  border-bottom: 1px solid var(--text-color-secondary);
 }
 
 .nav-menu {
@@ -86,8 +86,8 @@ header {
   color: var(--secondary-color);
 }
 
-.subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+.subtitle-hero {
+  font-size: clamp(1rem, 2.5vw, 1rem);
 }
 
 .link-media {
@@ -133,8 +133,14 @@ header {
 /* About section */
 
 .about {
-  width: 70%;
-  margin: 5% auto;
+  background: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--secondary-background-color)
+  );
+  width: 100%;
+  padding: 40px;
+  border-bottom: 1px solid var(--text-color-secondary);
 }
 
 .about-title {
@@ -145,6 +151,8 @@ header {
 }
 
 .presentation {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,7 +160,7 @@ header {
 }
 
 .about-text {
-  font-size: 18px;
+  font-size: clamp(1rem, 2.5vw, 1rem);
   line-height: 1.6;
   max-width: 40%;
   color: var(--text-color-secondary);
@@ -168,8 +176,12 @@ header {
 /* Portfolio section */
 
 .portfolio {
-  width: 70%;
-  margin: 5% auto;
+  width: 100%;
+  background: url(/assets/img/arriere-plan-portfolio-cao-impression-3d.png)
+    no-repeat center center;
+  background-size: cover;
+  padding: 40px;
+  border-bottom: 1px solid var(--text-color-secondary);
 }
 
 .portfolio-title {
@@ -180,9 +192,9 @@ header {
 }
 
 .portfolio-subtitle {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: var(--text-color-secondary);
 }
 
@@ -195,7 +207,7 @@ header {
   width: 40%;
   text-align: center;
   border-radius: 20px;
-  border: 1px solid black;
+  border: 1px solid var(--text-color-secondary);
   overflow: hidden;
 }
 
@@ -240,8 +252,14 @@ header {
 /* Skills section */
 
 .skills {
-  width: 70%;
-  margin: 5% auto;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--secondary-background-color)
+  );
+  border-bottom: 1px solid var(--text-color-secondary);
 }
 
 .skills-section-title {
@@ -252,6 +270,8 @@ header {
 }
 
 .skill-card-container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -273,7 +293,7 @@ header {
   color: var(--text-color-secondary);
 }
 
-.subtitle {
+.subtitle-skills {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   text-align: center;
   margin-bottom: 40px;
@@ -304,12 +324,16 @@ header {
 /* Contact section */
 
 .contact {
-  width: 70%;
-  margin: 5% auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding: 40px;
+  background: url(/assets/img/Technologies\ futuristes\ en\ réseau.png)
+    no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid var(--text-color-secondary);
 }
 
 .contact-section-title {
