@@ -324,6 +324,16 @@ header {
   color: var(--text-color-secondary);
 }
 
+/* Footer section */
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--primary-color);
+  color: var(--text-color-secondary);
+  text-align: center;
+}
+
 /* Media queries pour les écrans de petite taille */
 
 @media (max-width: 768px) {
