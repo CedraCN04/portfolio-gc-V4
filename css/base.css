@@ -13,6 +13,10 @@
   font-family: var(--font-family);
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 /* Header */
 
 header {
@@ -26,9 +30,9 @@ header {
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  height: 100px;
   width: 70%;
   margin: 0 auto;
   background-color: var(--primary-color);
@@ -95,11 +99,49 @@ header {
   max-width: 25%;
   height: auto;
   border-radius: 20px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About section */
+
+.about {
+  width: 70%;
+  margin: 5% auto;
+}
+
+.about-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 70px;
+  color: var(--text-color-secondary);
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 40%;
+  color: var(--text-color-secondary);
+}
+
+.about-image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Media queries pour les écrans de petite taille */
 
 @media (max-width: 768px) {
+  /* Navigation responsive */
+
   .nav-menu {
     width: 80%;
   }
@@ -115,6 +157,8 @@ header {
     display: none;
   }
 
+  /* Hero section responsive */
+
   .hero {
     width: 100%;
     flex-direction: column;
@@ -126,12 +170,34 @@ header {
     text-align: center;
   }
   .hero-image {
-    max-width: 80%;
+    max-width: 40%;
     margin: 10% auto;
   }
 
   .link-media {
     justify-content: center;
+  }
+
+  /* About section responsive */
+
+  .about {
+    width: 90%;
+    margin: 10% auto;
+  }
+  .about-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .presentation {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-text {
+    max-width: 100%;
+  }
+  .about-image {
+    max-width: 40%;
+    margin: 0 auto;
   }
 }
 
