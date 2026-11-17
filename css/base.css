@@ -144,7 +144,7 @@ header {
     var(--secondary-background-color)
   );
   width: 100%;
-  padding: 40px;
+  padding: 10%;
   border-bottom: 1px solid var(--text-color-secondary);
 }
 
@@ -156,8 +156,8 @@ header {
 }
 
 .presentation {
-  width: 80%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 10% auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,8 +185,9 @@ header {
   background: url(/assets/img/arriere-plan-portfolio-cao-impression-3d.png)
     no-repeat center center;
   background-size: cover;
-  padding: 40px;
+  padding: 10%;
   border-bottom: 1px solid var(--text-color-secondary);
+  padding: 10%;
 }
 
 .portfolio-title {
@@ -258,7 +259,7 @@ header {
 
 .skills {
   width: 100%;
-  padding: 40px;
+  padding: 10%;
   background: linear-gradient(
     to bottom,
     var(--background-color),
@@ -275,8 +276,8 @@ header {
 }
 
 .skill-card-container {
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -334,7 +335,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 40px;
+  padding: 10%;
   background: url(/assets/img/Technologies\ futuristes\ en\ réseau.png)
     no-repeat center center;
   background-size: cover;
