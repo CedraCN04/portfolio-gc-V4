@@ -332,6 +332,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--text-color-secondary);
   text-align: center;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
 /* Media queries pour les écrans de petite taille */
