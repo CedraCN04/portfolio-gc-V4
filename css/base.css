@@ -118,6 +118,11 @@ header {
     color 0.3s;
 }
 
+.action-button-project {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
 .action-button:hover {
   background-color: var(--text-color-secondary);
   color: var(--background-color);
