@@ -1,6 +1,7 @@
 :root {
-  --background-color: black;
+  --background-color: #016063;
   --text-color: white;
+  --text-color-secondary: #04214a;
   --primary-color: #cdf7fd4b;
   --secondary-color: #6f92d5;
   --font-family: "Arial", sans-serif;
