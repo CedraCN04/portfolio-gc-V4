@@ -265,78 +265,6 @@ header {
   color: var(--background-color);
 }
 
-/* Skills section */
-
-.skills {
-  width: 100%;
-  padding: 10%;
-  background: linear-gradient(
-    to bottom,
-    var(--background-color),
-    var(--secondary-background-color)
-  );
-  border-bottom: 1px solid var(--text-color-secondary);
-}
-
-.skills-section-title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--text-color-secondary);
-}
-
-.skill-card-container {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.skill-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--text-color-secondary);
-  border-radius: 20px;
-  padding: 20px;
-  gap: 20px;
-  width: 40%;
-}
-
-.skill-card-title {
-  font-size: var(--font-size-subtitle);
-  color: var(--text-color-secondary);
-}
-
-.subtitle-skills {
-  font-size: var(--font-size-subtitle);
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--text-color-secondary);
-}
-
-.skill-card-presentation {
-  font-size: var(--font-size-subtitle);
-  line-height: 1.6;
-  color: var(--text-color-secondary);
-}
-
-.skill-name {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.skill-text-name {
-  font-size: var(--font-size-subtitle);
-  color: var(--text-color-secondary);
-  background-color: var(--primary-color);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
 /* Contact section */
 
 .contact {
@@ -346,9 +274,11 @@ header {
   align-items: center;
   gap: 20px;
   padding: 10%;
-  background: url(/assets/img/Technologies\ futuristes\ en\ réseau.png)
-    no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--secondary-background-color)
+  );
   border-bottom: 1px solid var(--text-color-secondary);
 }
 
@@ -455,29 +385,6 @@ footer {
   .portfolio-item {
     width: 100%;
     margin: 0 auto;
-  }
-
-  /* Skills section responsive */
-
-  .skill-card-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .skill-name {
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 80%;
-    gap: 5px;
-  }
-
-  .skill-text-name {
-    padding: 5px 10px;
-  }
-
-  .skill-cards {
-    width: 100%;
   }
 }
 
