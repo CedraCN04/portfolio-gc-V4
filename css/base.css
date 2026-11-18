@@ -95,8 +95,13 @@ header {
   gap: 20px;
 }
 
-.link-media a {
+.link-media-icon {
   font-size: 40px;
+}
+
+.link-media-icon i:hover {
+  color: var(--secondary-color);
+  transition: color 0.3s;
 }
 
 .actions-buttons {
