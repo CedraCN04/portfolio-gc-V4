@@ -6,5 +6,6 @@
   --primary-color: #cdf7fd4b;
   --secondary-color: #6f92d5;
   --font-family: "Arial", sans-serif;
+  --font-size-subtitle: clamp(1rem, 2.5vw, 1.1rem);
 }
 

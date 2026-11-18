@@ -28,7 +28,7 @@ header {
   background: url(/assets/img/Fond\ technologique\ futuriste\ bleu\ sarcelle\ et\ marine.png)
     no-repeat center center;
   background-size: cover;
-  color: #f2fbfc;
+  color: var(--text-secondary-color);
   border-bottom: 1px solid var(--text-color-secondary);
 }
 
@@ -87,7 +87,7 @@ header {
 }
 
 .subtitle-hero {
-  font-size: clamp(1rem, 2.5vw, 1rem);
+  font-size: var(--font-size-subtitle);
 }
 
 .link-media {
@@ -165,7 +165,7 @@ header {
 }
 
 .about-text {
-  font-size: clamp(1rem, 2.5vw, 1rem);
+  font-size: var(--font-size-subtitle);
   line-height: 1.6;
   max-width: 40%;
   color: var(--text-color-secondary);
@@ -198,7 +198,7 @@ header {
 }
 
 .portfolio-subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: var(--font-size-subtitle);
   text-align: center;
   margin-bottom: 40px;
   color: var(--text-color-secondary);
@@ -225,13 +225,13 @@ header {
 }
 
 .portfolio-item-title {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: var(--font-size-subtitle);
   margin-top: 10px;
   color: var(--text-color-secondary);
 }
 
 .portfolio-item-description {
-  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-size: var(--font-size-subtitle);
   color: var(--text-color-secondary);
   padding: 10px;
 }
@@ -239,7 +239,7 @@ header {
 .portfolio-item-link {
   display: inline-block;
   margin: 20px auto;
-  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-size: var(--font-size-subtitle);
   color: var(--text-color-secondary);
   text-decoration: none;
   border: 1px solid var(--text-color-secondary);
@@ -295,19 +295,19 @@ header {
 }
 
 .skill-card-title {
-  font-size: clamp(1.5rem, 4vw, 1rem);
+  font-size: var(--font-size-subtitle);
   color: var(--text-color-secondary);
 }
 
 .subtitle-skills {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: var(--font-size-subtitle);
   text-align: center;
   margin-bottom: 40px;
   color: var(--text-color-secondary);
 }
 
 .skill-card-presentation {
-  font-size: 18px;
+  font-size: var(--font-size-subtitle);
   line-height: 1.6;
   color: var(--text-color-secondary);
 }
@@ -320,7 +320,7 @@ header {
 }
 
 .skill-text-name {
-  font-size: 1rem;
+  font-size: var(--font-size-subtitle);
   color: var(--text-color-secondary);
   background-color: var(--primary-color);
   padding: 5px 10px;
