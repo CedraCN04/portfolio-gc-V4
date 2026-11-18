@@ -61,6 +61,11 @@ header {
   display: none;
 }
 
+.text-link:hover {
+  color: var(--hover-color);
+  transition: color 0.3s;
+}
+
 /* Hero section */
 
 .hero {
