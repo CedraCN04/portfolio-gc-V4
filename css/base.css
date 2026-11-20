@@ -251,14 +251,15 @@ header {
 
 .project-skills {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
   padding: 10px;
 }
 
 .project-skills p {
   text-transform: uppercase;
+  flex-basis: 100%;
 }
 
 .project-skills span {
