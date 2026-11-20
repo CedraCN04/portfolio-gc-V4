@@ -223,7 +223,7 @@ header {
 }
 
 .portfolio-item {
-  width: 40%;
+  width: 60%;
   text-align: center;
   border-radius: 20px;
   border: 1px solid var(--text-color-secondary);
