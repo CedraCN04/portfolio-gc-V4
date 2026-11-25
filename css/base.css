@@ -28,7 +28,7 @@ header {
   background: url(/assets/img/Fond\ technologique\ futuriste\ bleu\ sarcelle\ et\ marine.png)
     no-repeat center center;
   background-size: cover;
-  color: #f2fbfc;
+  color: var(--text-color-secondary);
   border-bottom: 1px solid var(--text-color-secondary);
 }
 
@@ -50,11 +50,16 @@ header {
 
 .nav-list {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .nav-menu .text-link {
   font-size: 20px;
+}
+
+.text-link:hover {
+  color: var(--secondary-background-color);
+  transition: color 0.3s;
 }
 
 .nav-menu .icon-menu {
@@ -87,7 +92,8 @@ header {
 }
 
 .subtitle-hero {
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-text);
+  line-height: 1.8;
 }
 
 .link-media {
@@ -99,10 +105,16 @@ header {
   font-size: 40px;
 }
 
+.link-media i:hover {
+  color: var(--secondary-color);
+  transition: color 0.3s;
+}
+
 .actions-buttons {
   display: flex;
   gap: 20px;
   justify-content: flex-start;
+  width: 400px;
 }
 
 .action-button {
@@ -165,9 +177,12 @@ header {
 }
 
 .about-text {
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-size: var(--font-size-text);
   line-height: 1.6;
   max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: var(--text-color-secondary);
 }
 
@@ -207,10 +222,11 @@ header {
 .portfolio-items {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .portfolio-item {
-  width: 40%;
+  width: 50%;
   text-align: center;
   border-radius: 20px;
   border: 1px solid var(--text-color-secondary);
@@ -236,6 +252,25 @@ header {
   padding: 10px;
 }
 
+.project-skills {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+
+.project-skills p {
+  flex-basis: 100%;
+}
+
+.project-skills span {
+  background-color: var(--background-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--text-color-secondary);
+}
+
 .portfolio-item-link {
   display: inline-block;
   margin: 20px auto;
@@ -253,78 +288,6 @@ header {
 .portfolio-item-link:hover {
   background-color: var(--text-color-secondary);
   color: var(--background-color);
-}
-
-/* Skills section */
-
-.skills {
-  width: 100%;
-  padding: 10%;
-  background: linear-gradient(
-    to bottom,
-    var(--background-color),
-    var(--secondary-background-color)
-  );
-  border-bottom: 1px solid var(--text-color-secondary);
-}
-
-.skills-section-title {
-  font-size: var(--font-size-title);
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--text-color-secondary);
-}
-
-.skill-card-container {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.skill-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--text-color-secondary);
-  border-radius: 20px;
-  padding: 20px;
-  gap: 20px;
-  width: 40%;
-}
-
-.skill-card-title {
-  font-size: var(--font-size-subtitle);
-  color: var(--text-color-secondary);
-}
-
-.subtitle-skills {
-  font-size: var(--font-size-subtitle);
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--text-color-secondary);
-}
-
-.skill-card-presentation {
-  font-size: var(--font-size-text);
-  line-height: 1.6;
-  color: var(--text-color-secondary);
-}
-
-.skill-name {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.skill-text-name {
-  font-size: var(--font-size-text);
-  color: var(--text-color-secondary);
-  background-color: var(--primary-color);
-  padding: 5px 10px;
-  border-radius: 5px;
 }
 
 /* Contact section */
@@ -409,6 +372,8 @@ footer {
   .actions-buttons {
     flex-direction: column;
     gap: 10px;
+    width: 300px;
+    margin: 0 auto;
   }
 
   /* About section responsive */
@@ -427,7 +392,7 @@ footer {
     max-width: 100%;
   }
   .about-image {
-    max-width: 50%;
+    min-width: 100%;
     margin: 0 auto;
   }
 
@@ -436,7 +401,7 @@ footer {
     width: 100%;
   }
   .portfolio-items {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
     gap: 40px;
@@ -444,29 +409,6 @@ footer {
   .portfolio-item {
     width: 100%;
     margin: 0 auto;
-  }
-
-  /* Skills section responsive */
-
-  .skill-card-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .skill-name {
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 80%;
-    gap: 5px;
-  }
-
-  .skill-text-name {
-    padding: 5px 10px;
-  }
-
-  .skill-cards {
-    width: 100%;
   }
 }
 
