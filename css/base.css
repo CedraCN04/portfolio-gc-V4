@@ -28,7 +28,7 @@ header {
   background: url(/assets/img/Fond\ technologique\ futuriste\ bleu\ sarcelle\ et\ marine.png)
     no-repeat center center;
   background-size: cover;
-  color: var(--text-secondary-color);
+  color: #f2fbfc;
   border-bottom: 1px solid var(--text-color-secondary);
 }
 
@@ -61,11 +61,6 @@ header {
   display: none;
 }
 
-.text-link:hover {
-  color: var(--hover-color);
-  transition: color 0.3s;
-}
-
 /* Hero section */
 
 .hero {
@@ -84,7 +79,7 @@ header {
 }
 
 .title {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: var(--font-size-title);
 }
 
 .change-color {
@@ -100,13 +95,8 @@ header {
   gap: 20px;
 }
 
-.link-media-icon {
+.link-media a {
   font-size: 40px;
-}
-
-.link-media-icon i:hover {
-  color: var(--secondary-color);
-  transition: color 0.3s;
 }
 
 .actions-buttons {
@@ -117,7 +107,7 @@ header {
 
 .action-button {
   display: inline-block;
-  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-size: var(--font-size-text);
   color: var(--text-color-secondary);
   text-decoration: none;
   border: 1px solid var(--text-color-secondary);
@@ -154,38 +144,35 @@ header {
     var(--secondary-background-color)
   );
   width: 100%;
-  padding: 5%;
+  padding: 10%;
   border-bottom: 1px solid var(--text-color-secondary);
 }
 
 .about-title {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: var(--font-size-title);
   text-align: center;
   margin-bottom: 70px;
   color: var(--text-color-secondary);
 }
 
 .presentation {
-  width: 80%;
+  width: 70%;
   margin: 10% auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .about-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-size: var(--font-size-subtitle);
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   line-height: 1.6;
-  max-width: 50%;
+  max-width: 40%;
   color: var(--text-color-secondary);
 }
 
 .about-image {
-  max-width: 35%;
+  max-width: 30%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
@@ -220,11 +207,10 @@ header {
 .portfolio-items {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
 }
 
 .portfolio-item {
-  width: 50%;
+  width: 40%;
   text-align: center;
   border-radius: 20px;
   border: 1px solid var(--text-color-secondary);
@@ -239,40 +225,21 @@ header {
 }
 
 .portfolio-item-title {
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-subtitle);
   margin-top: 10px;
   color: var(--text-color-secondary);
 }
 
 .portfolio-item-description {
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-small-text);
   color: var(--text-color-secondary);
   padding: 10px;
-}
-
-.project-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  padding: 10px;
-}
-
-.project-skills p {
-  text-transform: uppercase;
-  flex-basis: 100%;
-}
-
-.project-skills span {
-  background-color: var(--background-color);
-  padding: 5px 10px;
-  border-radius: 5px;
 }
 
 .portfolio-item-link {
   display: inline-block;
   margin: 20px auto;
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-small-text);
   color: var(--text-color-secondary);
   text-decoration: none;
   border: 1px solid var(--text-color-secondary);
@@ -288,14 +255,10 @@ header {
   color: var(--background-color);
 }
 
-/* Contact section */
+/* Skills section */
 
-.contact {
+.skills {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
   padding: 10%;
   background: linear-gradient(
     to bottom,
@@ -305,14 +268,88 @@ header {
   border-bottom: 1px solid var(--text-color-secondary);
 }
 
+.skills-section-title {
+  font-size: var(--font-size-title);
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color-secondary);
+}
+
+.skill-card-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skill-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--text-color-secondary);
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+  width: 40%;
+}
+
+.skill-card-title {
+  font-size: var(--font-size-subtitle);
+  color: var(--text-color-secondary);
+}
+
+.subtitle-skills {
+  font-size: var(--font-size-subtitle);
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color-secondary);
+}
+
+.skill-card-presentation {
+  font-size: var(--font-size-text);
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+}
+
+.skill-name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-text-name {
+  font-size: var(--font-size-text);
+  color: var(--text-color-secondary);
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Contact section */
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10%;
+  background: url(/assets/img/Technologies\ futuristes\ en\ réseau.png)
+    no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid var(--text-color-secondary);
+}
+
 .contact-section-title {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: var(--font-size-title);
   margin-bottom: 20px;
   color: var(--text-color-secondary);
 }
 
 .contact-info {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: var(--font-size-subtitle);
   margin-bottom: 20px;
   color: var(--text-color-secondary);
 }
@@ -325,7 +362,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--text-color-secondary);
   text-align: center;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  font-size: var(--font-size-small-text);
 }
 
 /* Media queries pour les écrans de petite taille */
@@ -337,7 +374,7 @@ footer {
     width: 80%;
   }
   .nav-list {
-    gap: 30px;
+    gap: 20px;
   }
 
   .nav-menu .icon-menu {
@@ -372,8 +409,6 @@ footer {
   .actions-buttons {
     flex-direction: column;
     gap: 10px;
-    width: 300px;
-    margin: 0 auto;
   }
 
   /* About section responsive */
@@ -385,7 +420,6 @@ footer {
     margin-bottom: 40px;
   }
   .presentation {
-    width: 90%;
     flex-direction: column;
     gap: 40px;
   }
@@ -393,7 +427,7 @@ footer {
     max-width: 100%;
   }
   .about-image {
-    max-width: 90%;
+    max-width: 50%;
     margin: 0 auto;
   }
 
@@ -402,7 +436,7 @@ footer {
     width: 100%;
   }
   .portfolio-items {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     flex-direction: column;
     gap: 40px;
@@ -410,6 +444,29 @@ footer {
   .portfolio-item {
     width: 100%;
     margin: 0 auto;
+  }
+
+  /* Skills section responsive */
+
+  .skill-card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skill-name {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 5px;
+  }
+
+  .skill-text-name {
+    padding: 5px 10px;
+  }
+
+  .skill-cards {
+    width: 100%;
   }
 }
 
